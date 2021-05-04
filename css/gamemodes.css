@@ -1,0 +1,63 @@
+.game-modes{
+   background-image: url('../images/game-modes/gamemodes-bg-arena.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding: 2rem 0 4rem;
+   border-top: 1px solid #85784a;
+}
+.info-mode-container {
+   margin-top: 40rem;
+   text-align: center;
+}
+.info-mode-container > .title-desc > h3 {
+   font-family: "Penumbra Flare Std";
+   font-weight: 100;
+   color: #d1c084;
+   font-size: 5.3rem;
+   letter-spacing: 5px;
+}
+.info-mode-container > .title-desc > p {
+   color: #fff;
+   font-weight: 100;
+   padding: 2rem 0 6rem;
+   max-width: 55%;
+   margin: 0 auto;
+   line-height: 3rem;
+}
+.info-mode {
+   font-family: "Penumbra HalfSerif Std";
+   display: flex;
+   justify-content: space-between;
+   max-width: 66rem;
+   margin: 0 auto;
+}
+.info-mode p{
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.4rem;
+   font-weight: 500;
+   color: #d1c084;
+   text-transform: uppercase;
+}
+.info-mode span{
+   color: #fff;
+   font-weight: 100;
+}
+.info-mode b{
+   color: #fff;
+}
+
+
+.maps-container{
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 250rem;
+   justify-content: center;
+   margin: 3.5rem 0;
+}
+.map-content{
+   padding: .8rem;
+}
+.map-content > img{
+   border: 1px solid #85784a;
+}

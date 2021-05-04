@@ -1,0 +1,96 @@
+@import url(//db.onlinewebfonts.com/c/73247cee450ee982cfb96d73b02889a1?family=Penumbra+HalfSerif+Std);
+@import url(//db.onlinewebfonts.com/c/a8048ba3d772ec09d308aa42db899727?family=Penumbra+Flare+Std);
+@import url(//db.onlinewebfonts.com/c/8561b749b799641f11b7337d940c650a?family=Penumbra+HalfSerif+Std);
+:root{
+   --bgHeader: #05111e;
+   --primaryColorTxt: white;
+   --iconsHeaderColorBg: #1e3372;
+
+   font-size: 62.5%;
+
+}
+
+*,
+html{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-size: 1.6rem;
+   font-family: 'Roboto', sans-serif;
+}
+.container{
+   max-width: 1370px;
+   margin: 0 auto;
+   padding: 10px;
+   /* overflow-x: hidden; */
+}
+a{
+   background-color: transparent;
+   text-decoration: none;
+   color: var(--primaryTextColor)
+}
+
+.title-header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   max-width: 120rem;
+   margin: 2rem auto;
+}
+.title-header > h2{
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   letter-spacing: 7px;
+   font-family: "Penumbra HalfSerif Std";
+   color: white;
+}
+.title-header:before{
+   background: linear-gradient(270deg,#85784a 60%,transparent);
+   margin-left: 0;
+   margin-right: 2rem
+}
+.title-header:after{
+   background: linear-gradient(90deg,#85784a 60%,transparent);
+   margin-left: 0;
+   margin-right: 2rem
+}
+.title-header:after,
+.title-header:before{
+   content: "";
+   flex: 1 1;
+   height: 1px;
+   margin: 1rem;
+}
+
+.btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   border: 3px solid #85784a;
+   box-shadow: 0 0 13px 3px rgb(0 0 0 / 75%);
+   background: linear-gradient(
+      180deg,#131b28 0,
+      #131b28 50%,#131b28 0,
+      #050d1a 0,#050d1a
+   );
+   font-family: "Penumbra HalfSerif Std", sans-serif;
+   letter-spacing: 4px;
+   color: #ada176;
+   cursor: pointer;
+   transition: all .5s ease;
+}
+.btn-large{
+  font-size: 1.6rem;
+  width: 270px;
+  min-height: 7rem;
+  padding: 1rem;
+}
+.btn-small{
+   font-size: 1.3rem;
+   width: 185px;
+   min-height: 5rem;
+   padding: 1rem;
+ }

@@ -1,0 +1,111 @@
+header{
+   color: var(--primaryColorTxt);
+   background-color: var(--bgHeader);
+   display: flex;
+   width: 100%;
+   height: 5rem;
+   font-size: 1.2rem;
+   position: fixed;
+   text-transform: uppercase;
+   font-family: Roboto;
+   font-weight: 500;
+   z-index: 2;
+}
+header div img{
+   width: 150px;
+}
+nav{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+ul, ol{
+   display: flex;
+}
+ul {
+   letter-spacing: 2.3px; 
+}
+.logo{
+   background-image: url("../images/generals/smite-logo.png");
+   background-repeat: no-repeat;
+   background-position: 50%;
+   background-size: 80%;
+   height: 100%;
+   width: 16.5rem;
+}
+ul li:nth-child(6) > img{
+   width: 11px
+}
+li{
+   list-style: none;
+   vertical-align: middle;
+}
+nav li {
+   cursor: pointer;
+   align-self: center;
+   padding: 10px 16px;
+}
+ol{
+   background-color: var(--iconsHeaderColorBg);
+}
+ol > li {
+   font-style: normal;
+   font-weight: 400;
+   font-variant: normal;
+   height: 50px;
+   line-height: 2.3;
+   margin: 0 1px;
+   background-color: hsla(0,0%,100%,.05)
+}
+ol li:nth-child(4){
+   background-color: #9f9160;
+   padding: 13px 38px;
+}
+ol li > img{
+   width: 22px;
+   vertical-align: middle;
+}
+
+
+
+.header-background{
+   background-image: url(../images/generals/smite_website_header.jpg);
+   background-repeat: no-repeat;
+   background-position: top;
+   background-size: cover;
+   width: 100%;
+   height: 105vh;
+}
+.play-free-now{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: linear-gradient(90deg, transparent 0, rgba(0,0,0,.75) 25%, rgba(0,0,0,.75) 75%, transparent);
+   width: 38vw;
+   height: 280px;
+   text-align: center;
+   padding: 35px 0;
+   margin: 190px auto;
+}
+.logo-container > img {
+   height: auto;
+   width: 440px;
+}
+.play-free-now > a {
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   color: var(--primaryColorTxt);
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   background-color: #1a273b;
+   padding: 15px;
+   width: 270px;
+   border: 2px solid #e9d691;
+   font-family: 'Penumbra Flare Std';
+   font-size: 1.75rem;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+}

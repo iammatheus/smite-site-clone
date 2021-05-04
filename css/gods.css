@@ -1,0 +1,133 @@
+.gods{
+   background-image: url('../images/gods-preview/gods-bkg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0 top;
+   border-top: 1px solid #85784a;
+   padding-top: 5rem;
+}
+.gods-wraper{
+   margin: 0 auto;
+   max-width: 120rem;
+   width: 100%;
+   display: flex;
+   height: 100rem;
+}
+.gods-aside{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   z-index: 1;
+   margin-top: 5rem;
+   height: 94rem;
+}
+.small-god-container{
+   height: 10rem;
+}
+.small-god-container:before{
+   content: "";
+   width: 4rem;
+   height: 3rem;
+   display: flex;
+}
+.small-god-container > img {
+   border: 1px solid #85784a;
+}
+.free-play:before,
+.free-to-play:before{
+   content: "\26A1";
+   font-size: 1.8rem;
+   width: 4rem;
+   height: 3rem;
+
+   color: transparent;
+   background-color: #85784a;
+   box-shadow: 0 0 1rem #000;
+   text-shadow: 0 0 0 #fff;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.free-play:before{
+   position: relative;
+   left: -.2rem;
+   top: 3.8rem;
+}
+
+.free-to-play{
+   font-size: 1.4rem;
+   text-transform: uppercase;
+   color: #fff;
+   font-weight:700;
+   align-items: center;
+   justify-content: space-evenly;
+   display: flex;
+   position: relative;
+   left: -6.5rem;
+   margin: 5rem 0 2rem;
+}
+
+
+
+
+.show-gods{
+   max-width: 90rem;
+   position: relative;
+   top: -45px;
+   left: -140px;
+}
+.god-view{
+   position: relative;
+   left: 0;
+   top: 20px;
+}
+.god-info{
+   border: 1px solid #49422b;
+   text-align: center;
+   background-color: rgba(0,0,0,.73);
+   width: 68rem;
+   padding: 3rem 0;
+   position: relative;
+   left: 250px;
+   top: -320px;
+}
+.god-name > h2{
+   font-family: "Penumbra HalfSerif Std";
+   font-size: 2.6rem;
+   color:white;
+   font-weight: 100;
+   letter-spacing: .5rem;
+   line-height: 3.5rem;
+}
+.god-name h2 > span{
+   color: #e5d9ae;
+}
+.god-skills{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 3rem 0;
+}
+.skills-content {
+   height: 28px;
+   border-left: 1px solid #49422b;
+   height: 2rem
+}
+.skills-content:first-child{
+   border: none;
+}
+.skills-content > span{
+   font-size: 1.6rem;
+   color: #85784a;
+}
+.skills-content{
+   display: flex;
+   align-items: center;
+   padding: 0 20px;
+}
+.skills-content > img {
+   width: 21px;
+   margin-right: 4px;
+}
