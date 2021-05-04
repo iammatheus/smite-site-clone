@@ -1,13 +1,11 @@
-@import url(//db.onlinewebfonts.com/c/73247cee450ee982cfb96d73b02889a1?family=Penumbra+HalfSerif+Std);
-@import url(//db.onlinewebfonts.com/c/a8048ba3d772ec09d308aa42db899727?family=Penumbra+Flare+Std);
 
 @font-face {
    font-family: "Penumbra HalfSerif Std";
-   src: url("http://db.onlinewebfonts.com/t/8561b749b799641f11b7337d940c650a.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+   src: url('../fonts/penumbra-half-serif.ttf');
 }
 @font-face {
    font-family: "Penumbra Flare Std";
-   src: url("http://db.onlinewebfonts.com/t/a8048ba3d772ec09d308aa42db899727.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+   src: url('../fonts/penumbra-flare.ttf')
 }
 :root{
    --bgHeader: #05111e;
@@ -52,6 +50,7 @@ a{
    text-transform: uppercase;
    letter-spacing: 7px;
    font-family: "Penumbra HalfSerif Std";
+   font-weight: 100;
    color: white;
 }
 .title-header:before{
