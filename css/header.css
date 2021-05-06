@@ -14,15 +14,16 @@ header{
 header div img{
    width: 150px;
 }
-nav{
+header > nav{
    width: 100%;
    display: flex;
    justify-content: space-between;
 }
-ul, ol{
+header nav ul, 
+header nav ol{
    display: flex;
 }
-ul {
+header nav ul {
    letter-spacing: 2.3px; 
 }
 .logo{
@@ -33,22 +34,21 @@ ul {
    height: 100%;
    width: 16.5rem;
 }
-ul li:nth-child(6) > img{
+header ul li:nth-child(6) > img{
    width: 11px
 }
-li{
-   list-style: none;
+header nav li{
    vertical-align: middle;
 }
-nav li {
+header nav li {
    cursor: pointer;
    align-self: center;
    padding: 10px 16px;
 }
-ol{
+header nav ol{
    background-color: var(--iconsHeaderColorBg);
 }
-ol > li {
+header nav ol > li {
    font-style: normal;
    font-weight: 400;
    font-variant: normal;
@@ -57,16 +57,30 @@ ol > li {
    margin: 0 1px;
    background-color: hsla(0,0%,100%,.05)
 }
-ol li:nth-child(4){
+header nav ol li:nth-child(4){
    background-color: #9f9160;
    padding: 13px 38px;
 }
-ol li > img{
+header nav ol li > img{
    width: 22px;
    vertical-align: middle;
 }
 
-
+.more{
+   display: flex;
+   align-items: center;
+}
+.more span{
+   color: #9f9160;
+   margin-left: -6.5rem;
+   transform: rotate(180deg);
+   transition: ease-in .1s;
+   padding: 1.5rem 5rem;
+   cursor: pointer;
+}
+.more span:hover {
+   transform: rotate(0deg);
+}
 
 .header-background{
    background-image: url(../images/generals/smite_website_header.jpg);

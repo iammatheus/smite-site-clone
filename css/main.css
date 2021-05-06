@@ -29,13 +29,17 @@ body{
 .container{
    max-width: 1370px;
    margin: 0 auto;
-   padding: 10px;
+   padding: 1rem;
    /* overflow-x: hidden; */
 }
 a{
    background-color: transparent;
    text-decoration: none;
-   color: var(--primaryTextColor)
+   color: var(--primaryTextColor);
+   cursor: pointer;
+}
+li {
+   list-style: none;
 }
 
 .title-header {
