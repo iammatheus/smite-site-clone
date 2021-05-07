@@ -1,0 +1,25 @@
+/* Before/After animate button reflection */
+
+header nav ol > li.play-free:before,
+.play-free-now > a:after{
+   content: "";
+   position: absolute;
+   top: -1.5rem;
+   right: 15rem;
+   width: 5rem;
+   height: 8rem;
+   background-color: #fff;
+   transform: rotate(15deg);
+   transition: .3s;
+   opacity: .4;
+}
+header nav ol > li.play-free:hover:before{
+   right: -7rem;
+}
+.play-free-now > a:after{
+   left: -6rem;
+   transition: .3s;
+}
+.play-free-now > a:hover:after{
+   left: 28rem
+}

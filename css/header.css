@@ -9,22 +9,7 @@ header{
    text-transform: uppercase;
    font-family: Roboto;
    font-weight: 500;
-   z-index: 2;
-}
-header div img{
-   width: 150px;
-}
-header > nav{
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-}
-header nav ul, 
-header nav ol{
-   display: flex;
-}
-header nav ul {
-   letter-spacing: 2.3px; 
+   z-index: 5;
 }
 .logo{
    background-image: url("../images/generals/smite-logo.png");
@@ -34,38 +19,48 @@ header nav ul {
    height: 100%;
    width: 16.5rem;
 }
-header ul li:nth-child(6) > img{
-   width: 11px
+header > nav{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+header nav ul, 
+header nav ol{
+   display: flex;
+   align-items: center;
+}
+header nav ul {
+   letter-spacing: 2.3px; 
 }
 header nav li{
-   vertical-align: middle;
-}
-header nav li {
    cursor: pointer;
    align-self: center;
    padding: 10px 16px;
-}
-header nav ol{
-   background-color: var(--iconsHeaderColorBg);
-}
-header nav ol > li {
-   font-style: normal;
-   font-weight: 400;
-   font-variant: normal;
-   height: 50px;
-   line-height: 2.3;
-   margin: 0 1px;
-   background-color: hsla(0,0%,100%,.05)
-}
-header nav ol li:nth-child(4){
-   background-color: #9f9160;
-   padding: 13px 38px;
-}
-header nav ol li > img{
-   width: 22px;
    vertical-align: middle;
 }
-
+header nav ul li {
+   padding: 1.75rem 1.6rem;
+   position: relative;
+   transition: .1s;
+}
+header nav ul li:hover{
+   color: #9f9160
+}
+header nav ul li:after{
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 0;
+   height: .3rem;
+   transform: rotate(180deg);
+   transition: ease .1s
+}
+header nav ul li:hover:after{
+   width: 100%;
+   left: 0;
+   background-color: #9f9160;
+}
 .more{
    display: flex;
    align-items: center;
@@ -80,6 +75,64 @@ header nav ol li > img{
 }
 .more span:hover {
    transform: rotate(0deg);
+}
+.dropdown{
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   position: absolute;
+   top: 5rem;
+   background-color: var(--bgHeader);
+   width: 25rem;
+}
+.drop-links:after{
+   content: "";
+   width: .3rem;
+   height: 100%;
+   left: 0;
+   top: 0;
+   position: absolute;
+}
+.drop-links:hover:after{
+   background-color: #9f9160;
+}
+.drop-links{
+   padding: 1rem 1rem;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+.drop-links:hover{
+   color: #9f9160;
+   background-color: #1e2935;
+}
+header nav ol{
+   background-color: var(--iconsHeaderColorBg);
+}
+header nav ol > li {
+   font-style: normal;
+   font-weight: 400;
+   font-variant: normal;
+   height: 50px;
+   line-height: 2.3;
+   margin: 0 1px;
+   background-color: hsla(0,0%,100%,.05);
+   transition: .1s;
+}
+header nav ol > li:hover {
+   background-color: #354880;
+}
+header nav ol > li.play-free{
+   background-color: #9f9160;
+   padding: 13px 38px;
+   position: relative;
+   color: #fff;
+   overflow: hidden;
+}
+
+header nav ol li > img{
+   width: 22px;
+   vertical-align: middle;
 }
 
 .header-background{
@@ -102,12 +155,14 @@ header nav ol li > img{
    padding: 35px 0;
    margin: 190px auto;
 }
+
 .logo-container > img {
    height: auto;
    width: 440px;
 }
 .play-free-now > a {
-   display: block;
+   width: 100%;
+   height: auto;
    text-align: center;
    text-decoration: none;
    color: var(--primaryColorTxt);
@@ -122,4 +177,9 @@ header nav ol li > img{
    position: absolute;
    left: 50%;
    transform: translate(-50%);
+   transition: .05s;
+   overflow: hidden;
+}
+.play-free-now > a:hover{
+   box-shadow: 0 0 50px 25px#fff;
 }
