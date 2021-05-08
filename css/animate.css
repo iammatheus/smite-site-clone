@@ -1,25 +1,74 @@
 /* Before/After animate button reflection */
 
 header nav ol > li.play-free:before,
-.play-free-now > a:after{
+.play-free-now > a:after,
+.btn:after{
    content: "";
    position: absolute;
-   top: -1.5rem;
-   right: 15rem;
+   top: -20%;
+   left: -6rem;
    width: 5rem;
-   height: 8rem;
+   height: 9rem;
    background-color: #fff;
    transform: rotate(15deg);
    transition: .3s;
    opacity: .4;
 }
-header nav ol > li.play-free:hover:before{
-   right: -7rem;
+header nav ol > li.play-free:hover:before,
+.play-free-now > a:hover:after,
+.btn:hover:after{
+   left: 105%;
 }
-.play-free-now > a:after{
-   left: -6rem;
-   transition: .3s;
+
+
+
+/* Animate Images */
+.image-container:hover{
+   transform: scale(1.1)
 }
-.play-free-now > a:hover:after{
-   left: 28rem
+.map-content:after{
+   content: "";
+
+   font-family: "Penumbra HalfSerif Std";
+   font-size: 3rem;
+   text-transform: uppercase;
+   letter-spacing: 1rem;
+   color: #fff;
+   background-color: rgba(0,0,0,.5);
+   
+   width: 96%;
+   height: 88%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: absolute;
+   left: 2.2%;
+   top: 5%;
+   
+   cursor: pointer;
+   opacity: 0;
+   transition: .5s;
+}
+.map-content:first-child:after{
+   content: "Arena";
+}
+.map-content:nth-child(2):after{
+   content: "Conquest"
+}
+.map-content:nth-child(3):after{
+   content: "Assault"
+}
+.map-content:nth-child(4):after{
+   content: "Joust"
+}
+.map-content:nth-child(5):after{
+   content: "Siege"
+}
+.map-content:last-child:after{
+   content: "Clash"
+}
+.map-content:hover:after{
+   opacity: 1;
 }

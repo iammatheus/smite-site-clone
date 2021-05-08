@@ -13,7 +13,6 @@
    --iconsHeaderColorBg: #1e3372;
 
    font-size: 62.5%;
-
 }
 
 *,
@@ -91,7 +90,9 @@ li {
    letter-spacing: 4px;
    color: #ada176;
    cursor: pointer;
-   transition: all .5s ease;
+   position: relative;
+   overflow: hidden;
+   transition: .6s;
 }
 .btn-large{
   font-size: 1.6rem;
@@ -104,4 +105,12 @@ li {
    width: 185px;
    min-height: 5rem;
    padding: 1rem;
+ }
+ .btn:hover{
+   background: linear-gradient(
+      180deg,#182841 0,
+      #182841 50%,#182841 0,
+      #0b1b35 0,#0b1b35
+   );
+   color: #fff;
  }

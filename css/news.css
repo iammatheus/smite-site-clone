@@ -59,6 +59,7 @@
    background-position: 50%;
    background-repeat: no-repeat;
    height: 18rem;
+   transition: .2s;
 }
 .new1{
    background-image: url('../images/news/skillshot.jpg');
