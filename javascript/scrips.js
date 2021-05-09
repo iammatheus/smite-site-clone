@@ -4,6 +4,8 @@ let dropdown = document.querySelector('.dropdown')
 let smallGodContainerScale = document.querySelectorAll('.small-god-container-scale')
 let smallButtonContainer = document.querySelector('.small-button-container')
 
+
+//Rotate arrow icon in menu more
 more.addEventListener('mouseover', () => {
    dropdown.style.display = 'flex'
    dropdown.style.opacity = 1
@@ -26,11 +28,11 @@ dropdown.addEventListener('mouseout', () => {
 })
 
 
-
-
 //Small Gods - Adding scale to the image when moving and removing the scale when clicking
 for(let i = 0; i < smallGodContainerScale.length; i++){
+   smallGodContainerScale[0].classList.add('small-god-border')
    smallGodContainerScale[i].onclick = function(){
+
       let el = smallGodContainerScale[0];
       while(el){
          if(el.tagName === 'DIV'){
@@ -38,9 +40,10 @@ for(let i = 0; i < smallGodContainerScale.length; i++){
             el.classList.add('small-god-container-scale');
          }
          el = el.nextSibling;
-      }      
+      } 
+
       this.classList.add('small-god-border');
       this.classList.remove('small-god-container-scale');
       smallButtonContainer.classList.remove('small-god-container-scale')
-   };
+   }
 }

@@ -2,7 +2,7 @@
    background-color: #071425;
    text-align: center;
    color: var(--primaryColorTxt);
-   background-image: url('../images/news/news-bkg.png');
+   background-image: url('../images/news/newsBkg.png');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -65,15 +65,15 @@
    background-image: url('../images/news/skillshot.jpg');
 }
 .new2{
-   background-image: url('../images/news/update-notes.webp');
+   background-image: url('../images/news/updateNotesMonsterCat.webp');
    height: 21.2rem;
 }
 .new3{
-   background-image: url('../images/news/SMITE-persephone-280x160.webp');
+   background-image: url('../images/news/persephone.webp');
    height: 16rem;
 }
 .new4{
-   background-image: url('../images/news/update-notes-2.webp');
+   background-image: url('../images/news/updateNotesKingUruk.webp');
 }
 .new5-right{
    background-image: url('../images/news/gilgamesh.webp');
@@ -198,7 +198,7 @@
    left: 20%;
    width: 33px;
    height: 33px;
-   background-image: url('../images/news/icon-babylonian-white.webp');
+   background-image: url('../images/news/iconBabylonianWhite.webp');
 }
 .info-container-right > .headline{
    font-size: 1.8rem;
