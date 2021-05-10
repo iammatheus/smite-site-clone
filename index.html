@@ -50,7 +50,7 @@
    </header>
 
 
-   <section class="header-background">
+   <section id="top" class="header-background">
       <div class="play-free-now container">
          <div class="logo-container">
             <img src="images/generals/smite-logo.png" alt="">
@@ -399,7 +399,7 @@
                   <p>Players per team: <span>5</span></p>
                </div>
                <div class="avg-game-time">
-                  <p>Avg game time: <b>15 Minutes</b></p>
+                  <p>Avg game time: <span><b>15 Minutes</b></span></p>
                </div>
                <div class="suggested-skill">
                   <p>Suggested Skill: <span>Novice</span></p>
@@ -408,22 +408,22 @@
          </div>
 
          <div class="maps-container">
-            <div class="map-content">
+               <div class="map-content" id="arena">
                <img src="images/game-modes/gamemode-tile-arena.jpg" alt="">
             </div>
-            <div class="map-content">
+            <div class="map-content" id="conquest">
                <img src="images/game-modes/gamemode-tile-conquest.jpg" alt="">
             </div>
-            <div class="map-content">
+            <div class="map-content" id="assault">
                <img src="images/game-modes/gamemode-tile-assault.jpg" alt="">
             </div>
-            <div class="map-content">
+            <div class="map-content" id="joust">
                <img src="images/game-modes/gamemode-tile-joust.jpg" alt="">
             </div>
-            <div class="map-content">
+            <div class="map-content" id="siege">
                <img src="images/game-modes/gamemode-tile-siege.jpg" alt="">
             </div>
-            <div class="map-content">
+            <div class="map-content" id="clash">
                <img src="images/game-modes/gamemode-tile-clash.jpg" alt="">
             </div>
          </div>
@@ -464,8 +464,8 @@
 
             <div class="back-top">
                <p>Back To Top</p>
-               <a class="back-top-icon">
-                  <i class="fas fa-chevron-left"></i>
+               <a href="#top" class="back-top-icon top">
+                  <i href="#top" class="fas fa-chevron-left top"></i>
                </a>
             </div>
          </div>
@@ -475,21 +475,21 @@
          <div class="footer-menu-container">
             <nav>
                <ul>
-                  <a href=""><li>News</li></a>
-                  <a href=""><li>Game Modes</li></a>
-                  <a href=""><li>Gods</li></a>
-                  <a href=""><li>Items</li></a>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Game Modes</a></li>
+                  <li><a href="">Gods</a></li>
+                  <li><a href="">Items</a></li>
                </ul>
                <ul>
-                  <a href=""><li>Esports</li></a>
-                  <a href=""><li>Store</li></a>
-                  <a href=""><li>Support</li></a>
-                  <a href=""><li>Merchandise</li></a>
+                  <li><a href="">Esports</a></li>
+                  <li><a href="">Store</a></li>
+                  <li><a href="">Support</a></li>
+                  <li><a href="">Merchandise</a></li>
                </ul>
                <ul>
-                  <a href=""><li>Privacy Policy</li></a>
-                  <a href=""><li>Manage Cookies</li></a>
-                  <a href=""><li>Do Not Sell My Personal Information</li></a>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Manage Cookies</a></li>
+                  <li><a href="">Do Not Sell My Personal Information</a></li>
                </ul>
             </nav>
    
@@ -539,5 +539,6 @@
    <script src="https://kit.fontawesome.com/308a12915f.js" crossorigin="anonymous"></script>
    <script src="javascript/scrips.js"></script>
    <script src="javascript/godsProfile.js"></script>
+   <script src="javascript/gameModes.js"></script>
 </body>
 </html>

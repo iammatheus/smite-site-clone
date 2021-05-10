@@ -1,5 +1,4 @@
 /* Before/After animate button reflection */
-
 header nav ol > li.play-free:before,
 .play-free-now > a:after,
 .btn:after{
@@ -19,8 +18,6 @@ header nav ol > li.play-free:hover:before,
 .btn:hover:after{
    left: 105%;
 }
-
-
 
 /* Animate Images */
 .image-container:hover{
@@ -51,7 +48,7 @@ header nav ol > li.play-free:hover:before,
    opacity: 0;
    transition: .5s;
 }
-.map-content:first-child:after{
+.map-content:first-child:hover:after{
    content: "Arena";
 }
 .map-content:nth-child(2):after{
@@ -71,4 +68,4 @@ header nav ol > li.play-free:hover:before,
 }
 .map-content:hover:after{
    opacity: 1;
-}
+} 

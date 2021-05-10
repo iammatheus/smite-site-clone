@@ -212,100 +212,109 @@ const RA = {
 for(let i = 0; i < smallGodContainer.length; i++){
    smallGodContainer[i].addEventListener('click', (e) => {
       if(e.target.id == 'zeus'){
+         godName.innerHTML = ZEUS.name
+         godImg.src = ZEUS.image
          skillsImg.forEach((element, position) => {
-            godName.innerHTML = ZEUS.name
             element.src = ZEUS.skillsIcon[position].skillIcon
-            godImg.src = ZEUS.image
          })
          skills.forEach((element, position) =>  {
             element.innerHTML = ZEUS.skills[position].skill
          })
 
       }else if(e.target.id == 'morrigan'){
+         godImg.src = MORRIGAN.image
+         godName.innerHTML = MORRIGAN.name
+
          skillsImg.forEach((element, position) => {
-            godName.innerHTML = MORRIGAN.name
             element.src = MORRIGAN.skillsIcon[position].skillIcon
-            godImg.src = MORRIGAN.image
          })
          skills.forEach((element, position) =>  {
             element.innerHTML = MORRIGAN.skills[position].skill
          })
 
       }else if(e.target.id == 'cernnunos'){
+         godName.innerHTML = CERNUNNOS.name
+         godImg.src = CERNUNNOS.image
+         
          skillsImg.forEach((element, position) => {
-            godName.innerHTML = CERNUNNOS.name
             element.src = CERNUNNOS.skillsIcon[position].skillIcon
-            godImg.src = CERNUNNOS.image
          })
          skills.forEach((element, position) =>  {
             element.innerHTML = CERNUNNOS.skills[position].skill
          })
 
       }else if(e.target.id == 'neith'){
+         godImg.src = NEITH.image
+         godName.innerHTML = NEITH.name
+         
          skillsImg.forEach((element, position) => {
-            godName.innerHTML = NEITH.name
             element.src = NEITH.skillsIcon[position].skillIcon
-            godImg.src = NEITH.image
          })
          skills.forEach((element, position) =>  {
             element.innerHTML = NEITH.skills[position].skill
          })
 
       }else if(e.target.id == 'ymir'){
+         godName.innerHTML = YMIR.name
+         godImg.src = YMIR.image
+         
          skillsImg.forEach((element, position) => {
-            godName.innerHTML = YMIR.name
             element.src = YMIR.skillsIcon[position].skillIcon
-            godImg.src = YMIR.image
          })
          skills.forEach((element, position) =>  {
             element.innerHTML = YMIR.skills[position].skill
          })
 
       }else if(e.target.id == 'ganesha'){
+         godImg.src = GANESHA.image
+         godName.innerHTML = GANESHA.name
+         
          skillsImg.forEach((element, position) => {
-            godName.innerHTML = GANESHA.name
             element.src = GANESHA.skillsIcon[position].skillIcon
-            godImg.src = GANESHA.image
          })
          skills.forEach((element, position) =>  {
             element.innerHTML = GANESHA.skills[position].skill
          })
 
       }else if(e.target.id == 'daji'){
+         godName.innerHTML = DAJI.name
+         godImg.src = DAJI.image
+         
          skillsImg.forEach((element, position) => {
-            godName.innerHTML = DAJI.name
             element.src = DAJI.skillsIcon[position].skillIcon
-            godImg.src = DAJI.image
          })
          skills.forEach((element, position) =>  {
             element.innerHTML = DAJI.skills[position].skill
          })
 
       }else if(e.target.id == 'guanyu'){
+         godImg.src = GUANYU.image
+         godName.innerHTML = GUANYU.name
+         
          skillsImg.forEach((element, position) => {
-            godName.innerHTML = GUANYU.name
             element.src = GUANYU.skillsIcon[position].skillIcon
-            godImg.src = GUANYU.image
          })
          skills.forEach((element, position) =>  {
             element.innerHTML = GUANYU.skills[position].skill
          })
 
       }else if(e.target.id == 'chulainn'){
+         godName.innerHTML = CHULAINN.name
+         godImg.src = CHULAINN.image
+         
          skillsImg.forEach((element, position) => {
-            godName.innerHTML = CHULAINN.name
             element.src = CHULAINN.skillsIcon[position].skillIcon
-            godImg.src = CHULAINN.image
          })
          skills.forEach((element, position) =>  {
             element.innerHTML = CHULAINN.skills[position].skill
          })
 
       }else if(e.target.id == 'ra'){
+         godImg.src = RA.image
+         godName.innerHTML = RA.name
+         
          skillsImg.forEach((element, position) => {
-            godName.innerHTML = RA.name
             element.src = RA.skillsIcon[position].skillIcon
-            godImg.src = RA.image
          })
          skills.forEach((element, position) =>  {
             element.innerHTML = RA.skills[position].skill

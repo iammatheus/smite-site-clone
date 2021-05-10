@@ -114,3 +114,12 @@ li {
    );
    color: #fff;
  }
+
+ ::-webkit-scrollbar {
+   background-color: #191919;
+   height: .5rem;
+   width: .5rem;
+}
+::-webkit-scrollbar-thumb {
+   background-color: #85784a;
+}
