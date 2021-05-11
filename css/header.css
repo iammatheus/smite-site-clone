@@ -11,6 +11,12 @@ header{
    font-weight: 500;
    z-index: 5;
 }
+.menu-mobile{
+   display: none;
+}
+.logo-mobile{
+   display: none;
+}
 .logo{
    background-image: url("../images/generals/smite-logo.png");
    background-repeat: no-repeat;
@@ -20,9 +26,9 @@ header{
    width: 16.5rem;
 }
 header > nav{
-   width: 100%;
    display: flex;
    justify-content: space-between;
+   width: 100vw;
 }
 header nav ul, 
 header nav ol{
@@ -35,18 +41,18 @@ header nav ul {
 header nav li{
    cursor: pointer;
    align-self: center;
-   padding: 10px 16px;
+   /* padding: 10px 16px; */
    vertical-align: middle;
 }
-header nav ul li {
-   padding: 1.75rem 1.6rem;
+header nav.menu-desktop ul li {
+   padding: 1.75rem 1.45rem;
    position: relative;
    transition: .1s;
 }
 header nav ul li:hover{
    color: #9f9160
 }
-header nav ul li:after{
+header nav.menu-desktop ul li:after{
    content: "";
    position: absolute;
    bottom: 0;
@@ -56,7 +62,7 @@ header nav ul li:after{
    transform: rotate(180deg);
    transition: ease .1s
 }
-header nav ul li:hover:after{
+header nav.menu-desktop ul li:hover:after{
    width: 100%;
    left: 0;
    background-color: #9f9160;
@@ -109,7 +115,12 @@ header nav ul li:hover:after{
 header nav ol{
    background-color: var(--iconsHeaderColorBg);
 }
-header nav ol > li {
+header nav ol > li,
+.profile-mobile {
+   width: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    font-style: normal;
    font-weight: 400;
    font-variant: normal;
@@ -119,19 +130,26 @@ header nav ol > li {
    background-color: hsla(0,0%,100%,.05);
    transition: .1s;
 }
-header nav ol > li:hover {
+.menu-mobile div{
+   background-color: #1e3372;
+}
+header nav ol > li:hover,
+.profile-mobile:hover {
    background-color: #354880;
 }
 header nav ol > li.play-free{
    background-color: #9f9160;
-   padding: 13px 38px;
+   /* padding: 13px 38px; */
+   width: 128.27px;
    position: relative;
    color: #fff;
    overflow: hidden;
+   letter-spacing: 1px;
 }
 
-header nav ol li > img{
-   width: 22px;
+header nav ol li > img,
+.profile-mobile > img{
+   width: 27px;
    vertical-align: middle;
 }
 
@@ -149,7 +167,7 @@ header nav ol li > img{
    left: 50%;
    transform: translate(-50%, -50%);
    background: linear-gradient(90deg, transparent 0, rgba(0,0,0,.75) 25%, rgba(0,0,0,.75) 75%, transparent);
-   width: 38vw;
+   width: 800px;
    height: 280px;
    text-align: center;
    padding: 35px 0;
@@ -179,7 +197,5 @@ header nav ol li > img{
    transform: translate(-50%);
    transition: .05s;
    overflow: hidden;
-}
-.play-free-now > a:hover{
-   box-shadow: 0 0 50px 25px#fff;
+   
 }

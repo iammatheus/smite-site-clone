@@ -32,6 +32,15 @@
    width: 4rem;
    height: 3rem;
 }
+.small-god-container > p {
+   color: #fff;
+   font-family: 'Penumbra HalfSerif Std', sans-serif;
+   font-weight: 100;
+   text-align: center;
+   padding: .5rem;
+   font-size: 1.3rem;
+   display: none;
+}
 .small-god-img{
    width: 126px;
    height: 128px;
@@ -66,6 +75,9 @@
 .small-button-container{
    position: relative;
    top: -60px;
+}
+.small-button-container-mobile{
+   display: none;
 }
 .free-to-play{
    font-size: 1.4rem;

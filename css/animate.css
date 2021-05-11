@@ -19,6 +19,26 @@ header nav ol > li.play-free:hover:before,
    left: 105%;
 }
 
+
+/* Button Play Free animation */
+.play-free-now > a:hover{
+   box-shadow: 0 0 50px 25px#fff;
+   animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+   0%{
+      box-shadow: 0 0 40px 10px#fff;
+   }
+   50%{
+      box-shadow: 0 0 15px 8px#fff;
+   }
+   100%{
+      box-shadow: 0 0 40px 10px#fff;
+   }
+}
+
+
 /* Animate Images */
 .image-container:hover{
    transform: scale(1.1)

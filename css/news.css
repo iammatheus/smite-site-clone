@@ -30,6 +30,7 @@
    padding-top: 5rem;
    display: flex;
    justify-content: space-around;
+   align-items: center;
 }
 .news-aside,
 .promotional-container-top,
@@ -214,15 +215,17 @@
 }
 .promotional-container-top{
    margin: 7rem auto 0;
-   width: 120rem;
+   width: 100%;
+   max-width: 119rem;
 }
 .promotional-title-top{
-   width: 58.8rem;
+   width: 58rem;
 }
 
 .promotional-container-bottom{
    flex-direction: row;
-   width: 120rem;
+   width: 100%;
+   max-width: 119rem;
    margin: 0 auto;
 }
 .promo-info{
@@ -230,9 +233,13 @@
 }
 .promo1{
    background-image: url('../images/promotional-events/hotwbp_home.webp');
+   width: 58.6rem;
+   height: 20rem;
 }
 .promo2{
    background-image: url('../images/promotional-events/1024x512websitemaksffbf.jpg');
+   width: 58.6rem;
+   height: 20rem;
 }
 .promo3{
    background-image: url('../images/promotional-events/GemStorm-FeaturedBlogIMG-280x160.jpg');

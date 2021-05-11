@@ -12,12 +12,13 @@
    <link rel="stylesheet" href="css/gamemodes.css">
    <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" href="css/media.css">
    <title>Clone Website Smite</title>
 </head>
 <body>
    <header>
-      <a class="logo"></a>
-      <nav>
+      <a class="logo logo-desktop"></a>
+      <nav class="menu-desktop">
          <ul>
             <div class=""></div>
             <li><a href="">News</a></li>
@@ -46,6 +47,19 @@
             <li><img src="images/icons/profile.png" alt=""></li>
             <li class="play-free">Play Free</li>
          </ol>
+      </nav>
+
+      <nav class="menu-mobile">
+         <ul>
+            <li>MENU</li>
+            <a class="logo logo-mobile"></a>
+            <div>
+               <li class="profile-mobile">
+                  <img src="images/icons/profile.png" alt="">
+               </li>
+            </div>
+            
+         </ul>
       </nav>
    </header>
 
@@ -172,6 +186,7 @@
             <div class="title-header">
                <h2>Promotional Events</h2>
             </div>
+            
             <div class="promotional-container-top">
                <a href="#">
                   <div class="promotional-title-top">
@@ -189,7 +204,7 @@
                      </div>
                   </div>
                </a>
-
+   
                <a href="#">
                   <div class="promotional-title-top">
                      <div class="promotional-content-image">
@@ -208,7 +223,6 @@
                </a>
             </div>
 
-            
             <div class="promotional-container-bottom">
                <a href="#">
                   <div class="promotional-title-bottom">
@@ -226,7 +240,7 @@
                      </div>
                   </div>
                </a>
-
+   
                <a href="#">
                   <div class="promotional-title-bottom">
                      <div class="promotional-content-image">
@@ -243,7 +257,7 @@
                      </div>
                   </div>
                </a>
-
+   
                <a href="#">
                   <div class="promotional-title-bottom">
                      <div class="promotional-content-image">
@@ -260,7 +274,7 @@
                      </div>
                   </div>
                </a>
-
+   
                <a href="#">
                   <div class="promotional-title-bottom">
                      <div class="promotional-content-image">
@@ -294,42 +308,52 @@
             <div class="gods-aside">
                <div class="small-god-container small-god-container-scale free-play">
                   <img class="small-god-img" src="images/gods/zeus.webp" alt="" id="zeus">
+                  <p>Zeus</p>
                </div>
    
                <div class="small-god-container small-god-container-scale">
                   <img class="small-god-img" src="images/gods/the-morrigan.webp" alt="" id="morrigan">
+                  <p>The Morrigan</p>
                </div>
                
                <div class="small-god-container small-god-container-scale">
                   <img class="small-god-img" src="images/gods/cernnunos.webp" alt="" id="cernnunos">
+                  <p>Cernunnos</p>
                </div>
 
                <div class="small-god-container small-god-container-scale free-play" >
                   <img class="small-god-img" src="images/gods/neith.webp" alt="" id="neith">
+                  <p>Neith</p>
                </div>
    
                <div class="small-god-container small-god-container-scale free-play" >
                   <img class="small-god-img" src="images/gods/ymir.webp" alt="" id="ymir">
+                  <p>Ymir</p>
                </div>
    
                <div class="small-god-container small-god-container-scale">
                   <img class="small-god-img" src="images/gods/ganesha.webp" alt="" id="ganesha">
+                  <p>ganesha</p>
                </div>
    
                <div class="small-god-container small-god-container-scale">
                   <img class="small-god-img" src="images/gods/da-ji.webp" alt="" id="daji">
+                  <p>Da Ji</p>
                </div>
    
                <div class="small-god-container small-god-container-scale free-play">
                   <img class="small-god-img" src="images/gods/guan-yu.webp" alt="" id="guanyu">
+                  <p>Guan Yu</p>
                </div>
    
                <div class="small-god-container small-god-container-scale">
                   <img class="small-god-img" src="images/gods/cu-chulainn.webp" alt="" id="chulainn">
+                  <p>Cu Chulainn</p>
                </div>
    
                <div class="small-god-container small-god-container-scale free-play">
                   <img class="small-god-img" src="images/gods/ra.webp" alt="" id="ra">
+                  <p>Ra</p>
                </div>
 
                <div class="small-button-container">
@@ -340,6 +364,15 @@
                      <a href="#" class="btn btn-small">View All Gods</a>
                   </div> 
                </div>
+            </div>
+
+            <div class="small-button-container small-button-container-mobile">
+               <div class="free-to-play">
+                  Free to play
+               </div>
+               <div class="button">
+                  <a href="#" class="btn btn-small">View All Gods</a>
+               </div> 
             </div>
 
             <div class="show-gods">
@@ -431,7 +464,6 @@
          <div class="button">
             <a href="#" class="btn btn-large">View Game Modes</a>
          </div>
-
       </div>
    </section>
 
@@ -515,8 +547,9 @@
          <div class="footer-copyright-container">
             <div class="menu-other">
                <nav>
+                  <a class="hirez-footer-mobile"><img src="images/footer/hirez-logo.png" alt=""></a>
                   <ul>
-                     <li><img src="images/footer/hirez-logo.png" alt=""></li>
+                     <li class="hirez-footer-desktop"><img src="images/footer/hirez-logo.png" alt=""></li>
                      <li><a href="">Explore Games</a></li>
                      <li><a href="">Careers</a></li>
                      <li><a href="">Contact Us</a></li>
