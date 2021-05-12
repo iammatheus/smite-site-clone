@@ -29,5 +29,5 @@ function setImg(){
 	}else if(images[i] == 'gamemode-tile-clash.jpg'){
 		text.innerHTML = 'Clash'
 	}
-	return sliderImg.setAttribute('src', "../images/game-modes/"+images[i]);
+	return sliderImg.src = "images/game-modes/"+images[i];
 }

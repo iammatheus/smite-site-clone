@@ -27,7 +27,6 @@ dropdown.addEventListener('mouseout', () => {
    dropdown.style.opacity = 0
    more_icon.style.transform = 'rotate(180deg)'
 })
-
 // Scroll top 
 function scrollTop(event){
    event.preventDefault()
