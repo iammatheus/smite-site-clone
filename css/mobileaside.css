@@ -1,0 +1,74 @@
+.menu-mobile{
+   position: fixed;
+   left: -100%;
+   top: 0;
+   background-color: #05111e;
+   width: 75vw;
+   height: 100vh;
+   display: none;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   transition: .2s;
+}
+.menu-mobile-content{
+   height: 100vh;
+   width: inherit;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+.menu-mobile-options{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+.menu-mobile-options > a,
+.mobile-more{
+   padding: 1.5rem 2rem;
+   width: 75vw;
+   border-top: 1px solid hsla(0,0%,100%,.1);
+   letter-spacing: .2rem;
+   font-weight: 400;
+}
+.menu-mobile-options > a {
+   transition: .1s;
+}
+.mobile-more{
+   display: flex;
+   justify-content: space-between;
+}
+.mobile-more:hover{
+   background-color: rgba(255, 255, 255, 0.089)
+}
+.mobile-more > i{
+   transform: rotate(180deg);
+   color: #9f9160;
+   font-size: 1.6rem;
+}
+.menu-mobile-options > a:hover {
+   color: #9f9160;
+}
+#hirez-logo{
+   width: 460px;
+   max-width: 100%;
+   fill: hsla(0,0%,100%,.2);
+}
+.hirez-logo{
+   width: 100%;
+   text-align: center;
+   padding: 3rem;
+   background: red;
+   background-color: rgba(0,0,0,.1);
+   border-top: 1px solid hsla(0,0%,100%,.1);
+   cursor: initial;
+}
+.logo-aside{
+   margin : 0 auto;
+   width: 75% !important;
+   max-width: 25rem;
+   height: 20rem !important;
+   background-size: contain !important;
+}

@@ -9,14 +9,17 @@
    .logo-mobile{
       display: block;
    }
-   .menu-mobile{
+   .nav-mobile{
       display: flex;
       padding-left: 2rem;
    }
-   .menu-mobile > ul {
+   .nav-mobile > ul {
       display: flex;
       width: 100vw;
       justify-content: space-between;
+   }
+   .menu-mobile{
+      display: flex;
    }
 
    /* News Latest */
@@ -75,6 +78,11 @@
       filter: brightness(1.3);
    }
    
+   /* Game Modes */
+   .map-content:after{
+      opacity: 1;
+      background-color: transparent;
+   }
    
    /* Footer */
    .footer-menu-container > nav > ul {
@@ -91,6 +99,9 @@
 
 
 @media screen and (max-width: 900px){
+   .play-free-now{
+      width: 100%;
+   }
    .socials{
       width: 25rem;
    }
@@ -160,6 +171,76 @@
       font-size: 1.5rem;
       margin-top: .5rem;
    }
+   /* News - Latest */
+   .news-aside{
+      width: 100%;
+      flex-wrap: nowrap;
+      flex-direction: column;
+   }
+   .new-title{
+      width: 100%;
+   }
+   .new5-right{
+      height: 18rem;
+   }
+   .info-container > .headline,
+   .info-container-right > .headline{
+      line-height: 2rem;
+      padding: 2rem 1rem;
+      font-size: 1.4rem;
+   }
+
+
+   /* Game Modes */
+   .game-modes{
+      background-image: none !important;
+      background-color: black;
+   }
+   .game-modes > .container{
+      padding: 0;
+      margin: 0;
+   }
+   .info-mode-container,
+   .maps-container{
+      display: none;
+   }
+   .map-container-mobile{
+      display: flex;
+   }
+   
+
+   
+   /* Promotional Events */
+   .promotional-events {
+      margin: 7rem 0 14rem;
+   }
+   .promotional-container-top,
+   .image-container,
+   .promotional-container-bottom,
+   .promotional-title-top,
+   .promotional-title-bottom{
+      max-width: 100%;
+      width: 100%;
+   }
+   .promotional-container-top,
+   .promotional-container-bottom{
+      flex-direction: column;
+      flex-wrap: nowrap;
+   }
+
+   /* Gods */
+   .gods-aside{
+      width: 50rem;
+   }
+   .small-god-container,
+   .small-god-img{
+      width: 9rem;
+      height: 9rem;
+   }
+   .free-to-play{
+      margin-top: 3rem;
+   }
+
    .menu-other > nav ul li {
       border: none;
    }
@@ -183,5 +264,12 @@
    }
    .copyright img {
       margin-top: 1.5rem;
+   }
+}
+
+
+@media screen and (max-width: 300px){
+   .btn-large{
+      width: 100%;
    }
 }

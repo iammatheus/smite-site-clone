@@ -68,7 +68,7 @@ header nav ol > li.play-free:hover:before,
    opacity: 0;
    transition: .5s;
 }
-.map-content:first-child:hover:after{
+.map-content:first-child:after{
    content: "Arena";
 }
 .map-content:nth-child(2):after{

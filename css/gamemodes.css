@@ -64,3 +64,58 @@
 .map-content > img{
    border: 1px solid #85784a;
 }
+
+
+/* Mobile */
+.map-container-mobile,
+.map-content-mobile,
+.map-content-img-mobile{ 
+   padding: 0;
+   margin: 0;
+   border: none;
+   width: 100%;
+}
+.map-container-mobile {
+   display: none;
+   margin: 3rem 0;
+}
+.map-container-mobile p {
+   font-family: "Penumbra HalfSerif Std";
+   font-size: 2.2rem;
+   letter-spacing: .4rem;
+   color: white;
+   text-align: center;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+.map-content-mobile{
+   position: relative;
+}
+.buttons-slide{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+}
+.next,
+.prev{
+   color: rgba(255, 255, 255, 0.527);
+   font-size: 4rem;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   height: 100%;
+   padding: 0 1rem;
+   background: linear-gradient(270deg, transparent 0, rgba(0,0,0,.14) 24%, #000);
+}
+.next{
+   transform: rotate(180deg);
+}
+.prev{
+   transform: rotate(360deg);
+}
