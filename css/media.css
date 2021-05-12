@@ -18,7 +18,8 @@
       width: 100vw;
       justify-content: space-between;
    }
-   .menu-mobile{
+   .menu-mobile,
+   .more-mobile-container{
       display: flex;
    }
 
@@ -271,5 +272,11 @@
 @media screen and (max-width: 300px){
    .btn-large{
       width: 100%;
+   }
+}
+
+@media screen and (max-height: 975px){
+   .more-mobile-container{
+      top: 145px;
    }
 }

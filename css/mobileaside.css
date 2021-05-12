@@ -1,4 +1,5 @@
-.menu-mobile{
+.menu-mobile,
+.more-mobile-container{
    position: fixed;
    left: -100%;
    top: 0;
@@ -11,7 +12,13 @@
    align-items: flex-start;
    transition: .2s;
 }
-.menu-mobile-content{
+.more-mobile-container{
+   display: none;
+   left: -100%;
+   top: 166.4px;
+}
+.menu-mobile-content,
+.more-mobile-content{
    height: 100vh;
    width: inherit;
    display: flex;
@@ -20,12 +27,17 @@
    overflow-y: auto;
    overflow-x: hidden;
 }
-.menu-mobile-options{
+.more-mobile-content{
+   position: fixed;
+}
+.menu-mobile-options,
+.more-options-container{
    display: flex;
    flex-direction: column;
    width: 100%;
 }
 .menu-mobile-options > a,
+.more-options-container > a,
 .mobile-more{
    padding: 1.5rem 2rem;
    width: 75vw;
@@ -33,22 +45,58 @@
    letter-spacing: .2rem;
    font-weight: 400;
 }
-.menu-mobile-options > a {
+.more-options-container > a{
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-top: none;
+   border-bottom: 1px solid hsla(0,0%,100%,.1);
+}
+.more-options-container a:first-child{
+   display: block;
+   border-top: 1px solid hsla(0,0%,100%,.1);
+}
+.more-options-container a:first-child:hover{
+   color: inherit;
+}
+.more-options-container a:first-child > i {
+   margin-right: 2rem;
+   transform: none !important;
+}
+.menu-mobile-options > a,
+.more-options-container > a {
    transition: .1s;
 }
 .mobile-more{
    display: flex;
    justify-content: space-between;
 }
-.mobile-more:hover{
-   background-color: rgba(255, 255, 255, 0.089)
+.mobile-more:hover,
+.more-options-container > a:hover{
+   background-color: rgba(255, 255, 255, 0.089);
 }
-.mobile-more > i{
+.more-options-container a:before{
+   content: "";
+   width: .3rem;
+   height: 100%;
+   position: absolute;
+   left: 0;
+}
+.more-options-container a:hover:before{
+   background-color: #9f9160;
+}
+.more-options-container > a:first-child:before{
+   content: none;
+}
+.mobile-more > i,
+.more-options-container a:first-child > i{
    transform: rotate(180deg);
    color: #9f9160;
    font-size: 1.6rem;
 }
-.menu-mobile-options > a:hover {
+.menu-mobile-options > a:hover,
+.more-options-container > a:hover {
    color: #9f9160;
 }
 #hirez-logo{
@@ -71,4 +119,13 @@
    max-width: 25rem;
    height: 20rem !important;
    background-size: contain !important;
+}
+
+.overlay{
+   background-color: rgba(0,0,0,.5);
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   display: none;
+   z-index: 2;
 }
