@@ -1,8 +1,8 @@
 footer{
-   background-color: #071325;
+   background-color: var(--darkBlue);
    width: 100%;
    padding: 1rem 0 0;
-   border-top: 1px solid #434343;
+   border-top: 1px solid var(--borderFooter);
 }
 footer > .container,
 footer > .footer-menu > .footer-menu-container,
@@ -33,9 +33,9 @@ footer > .container{
    height: 3.8rem;
    font-size: 2rem;
 
-   border: 1px solid #fff;
+   border: 1px solid var(--white);
    border-radius: 50%;
-   color: #fff;
+   color: var(--white);
 
    display: flex;
    justify-content: center;
@@ -44,13 +44,13 @@ footer > .container{
    transition: ease-in .15s;
 }
 .socials-content > i:hover{
-   background-color: #fff;
-   color: #071325;
+   background-color: var(--white);
+   color: var(--darkBlue);
 }
 .back-top {
    display: flex;
    align-items: center;
-   color: #fff;
+   color: var(--white);
 }
 .back-top > p {
    padding: 0 1rem;
@@ -60,7 +60,7 @@ footer > .container{
    display: flex;
    align-items: center ;
    justify-content: center; 
-   border: 2px solid #fff;
+   border: 2px solid var(--white);
    border-radius: 50%;
    width: 2.7rem;
    height: 2.7rem;
@@ -79,17 +79,17 @@ footer > .container{
 
 /* Footer Menu*/
 .footer-menu{
-   border-top: 1px solid #434343;
+   border-top: 1px solid var(--borderFooter);
 }
 .footer-menu-container{
-   color: white;
+   color: var(--white);
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 4rem 10rem 4rem 13rem;
 }
 .footer-menu-container > nav {
-   color: #bcbcbc;
+   color: var(--grey);
    display: flex;
    justify-content: space-between;
    width: 53rem;
@@ -99,7 +99,7 @@ footer > .container{
    transition: .3s;
 }
 .footer-menu-container nav ul li:hover {
-   color: #85784a
+   color: var(--pastelYellow)
 }
 
 
@@ -125,9 +125,9 @@ footer > .container{
 
 /* Copyright */
 .footer-copyright{
-   background-color: #fff;
+   background-color: var(--white);
    font-size: 1.4rem;
-   color: #848484;
+   color: var(--darkGrey);
    padding: 1.5rem 11rem;
 }
 .footer-copyright-container{
@@ -142,7 +142,7 @@ footer > .container{
 }
 .menu-other > nav ul li{
    padding: 0 1.5rem;
-   border-right: 1px solid #848484;
+   border-right: 1px solid var(--darkGrey);
    text-align: center;
    vertical-align: middle;
    height: 1.2rem;

@@ -1,12 +1,12 @@
 .news{
-   background-color: #071425;
+   background-color: var(--bgNews);
    text-align: center;
-   color: var(--primaryColorTxt);
+   color: var(--white);
    background-image: url('../images/news/newsBkg.png');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   border-top: 1px solid #85784a;
+   border-top: 1px solid var(--pastelYellow);
 }
 .alien-content{
    margin-top: 50px;
@@ -46,8 +46,8 @@
 .promotional-title-bottom{
    display: inline-block;
    width: 28.2rem;
-   border: 1px solid #85784a;
-   background-color: #050d1a;
+   border: 1px solid var(--pastelYellow);
+   background-color: var(--bgPromoNewsItens);
    box-shadow: 0 0 13px 3px rgb(0 0 0 / 75%);
    margin: 1rem 0;
 }
@@ -88,9 +88,9 @@
 .info-icon{
    width: 4.8rem;
    height: 4.8rem;
-   border: 2px solid #776f49;
+   border: 2px solid var(--borderNewsItens);
    border-radius: 50%;
-   background-color: #071325;
+   background-color: var(--darkBlue);
    justify-content: center;
    position: absolute;
    right: 0;
@@ -124,7 +124,7 @@
    height: 21px !important
 }
 .info-container{
-   border-top: 1px solid #49422b;
+   border-top: 1px solid var(--borderContainerItens);
    height: 6.4rem;
    display: flex;
    align-items: center;
@@ -142,17 +142,17 @@
    height: 3.2rem;
 }
 .info-container-name{
-   color: #ada176;
+   color: var(--greyYellow);
    font-size: 1.4rem;
    height: 4rem;
-   border-top: 1px solid #49422b;
+   border-top: 1px solid var(--borderContainerItens);
    display: flex;
    justify-content: center;
    align-items: center;
 }
 .headline-container{
    height: 3.2rem;
-   border-top: 1px solid #776f49;
+   border-top: 1px solid var(--borderNewsItens);
 }
 .headline-update{
    height: 1rem;
@@ -167,14 +167,14 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   border-top: 1px solid #49422b;
+   border-top: 1px solid var(--borderContainerItens);
    height: 4rem;
 }
 .sub-headline-update > p{
    font-size: 1.2rem;
    font-family: "Roboto", sans-serif;
    font-weight: 100;
-   color: #85784a;
+   color: var(--pastelYellow);
    align-content: center;
    padding: 0 5px;
 }
@@ -182,7 +182,7 @@
    width: 58.1rem;
 }
 .new-info-right-container{
-   border: 1px solid #49422b
+   border: 1px solid var(--borderContainerItens)
 }
 .new-info-right{
    padding: 1.2rem;

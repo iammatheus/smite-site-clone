@@ -3,7 +3,7 @@
    background-repeat: no-repeat;
    background-size: cover;
    background-position: 0 top;
-   border-top: 1px solid #85784a;
+   border-top: 1px solid var(--pastelYellow);
    padding-top: 5rem;
 }
 .gods-wraper{
@@ -33,7 +33,7 @@
    height: 3rem;
 }
 .small-god-container > p {
-   color: #fff;
+   color: var(--white);
    font-family: 'Penumbra HalfSerif Std', sans-serif;
    font-weight: 100;
    text-align: center;
@@ -44,7 +44,7 @@
 .small-god-img{
    width: 126px;
    height: 128px;
-   border: 1px solid #85784a;
+   border: 1px solid var(--pastelYellow);
 }
 .free-play:before,
 .free-to-play:before{
@@ -54,9 +54,9 @@
    height: 3rem;
 
    color: transparent;
-   background-color: #85784a;
-   box-shadow: 0 0 1rem #000;
-   text-shadow: 0 0 0 #fff;
+   background-color: var(--pastelYellow);
+   box-shadow: 0 0 1rem var(--black);
+   text-shadow: 0 0 0 var(--white);
    
    display: flex;
    justify-content: center;
@@ -82,7 +82,7 @@
 .free-to-play{
    font-size: 1.4rem;
    text-transform: uppercase;
-   color: #fff;
+   color: var(--white);
    font-weight:700;
    align-items: center;
    justify-content: space-evenly;
@@ -105,9 +105,9 @@
    top: 20px;
 }
 .god-info{
-   border: 1px solid #49422b;
+   border: 1px solid var(--borderContainerItens);
    text-align: center;
-   background-color: rgba(0,0,0,.73);
+   background-color: var(--blackRgba7);
    width: 68rem;
    padding: 3rem 0;
    position: relative;
@@ -117,13 +117,13 @@
 .god-name > h2{
    font-family: "Penumbra HalfSerif Std";
    font-size: 2.6rem;
-   color:white;
+   color: var(--white);
    font-weight: 100;
    letter-spacing: .5rem;
    line-height: 3.5rem;
 }
 .god-name h2 > span{
-   color: #e5d9ae;
+   color: var(--godBottomName);
 }
 .god-skills{
    display: flex;
@@ -133,7 +133,7 @@
    padding: 3rem 0;
 }
 .skills-content{
-   border-left: 1px solid #49422b;
+   border-left: 1px solid var(--borderContainerItens);
    height: 2rem
 }
 .skills-content:first-child{
@@ -141,7 +141,7 @@
 }
 .skills-content > span{
    font-size: 1.6rem;
-   color: #85784a;
+   color: var(--pastelYellow);
 }
 .skills-content{
    display: flex;
@@ -157,7 +157,7 @@
 }
 .active{
    pointer-events: none;
-   outline: 1px solid #fff;
+   outline: 1px solid var(--white);
 }
 .small-god-container-scale:hover{
    transform: scale(1.3);

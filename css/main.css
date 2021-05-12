@@ -1,4 +1,3 @@
-
 @font-face {
    font-family: "Penumbra HalfSerif Std";
    src: url('../fonts/penumbra-half-serif.ttf');
@@ -8,9 +7,47 @@
    src: url('../fonts/penumbra-flare.ttf')
 }
 :root{
+   /* Neutral Color */
+   --black: #000;
+   --darkGrey: #848484;
+   --darkBlue: #071325;
+   --darkGrey: #848484;
+   --grey: #bcbcbc;
+   --greyYellow: #ada176;
+   --pastelYellow: #85784a;
+   --strawYellow: #9f9160;
+   --white: #fff;
+   --yellow: #d1c084;
+
+   /* Items Color */
    --bgHeader: #05111e;
-   --primaryColorTxt: white;
-   --iconsHeaderColorBg: #1e3372;
+   --bgIconsHeader: #1e3372;
+   --bgMenuHover: #1e2935;
+   --bgPlayFreeNow: #1a273b;
+   --bgNews: #071425;
+   --bgPromoNewsItens: #050d1a;
+   --bgScrollbar: #191919;
+
+   --iconsMenu: hsla(0,0%,100%,.05);
+   --iconsMenuHover: #354880;
+
+   --borderPlayFreeNow: #e9d691;
+   --borderNewsItens: #776f49;
+   --borderContainerItens: #49422b;
+   --borderFooter: #434343;
+
+   --godBottomName: #e5d9ae;
+   
+   /* Rgba Color */
+   --blackRgba5: rgba(0,0,0,.5);
+   --blackRgba7: rgba(0,0,0,.73);
+   --greyRgba: rgba(255, 255, 255, 0.527);
+  
+
+   /* Mobile menu color */
+   --borderMobileMenu: hsla(0,0%,100%,.1);
+   --bgHirez: rgba(0,0,0,.1);
+   --fillHirez: hsla(0,0%,100%,.2);
 
    font-size: 62.5%;
 }
@@ -34,7 +71,7 @@ body{
 a{
    background-color: transparent;
    text-decoration: none;
-   color: var(--primaryTextColor);
+   color: inherit;
    cursor: pointer;
 }
 li {
@@ -54,7 +91,7 @@ li {
    letter-spacing: 7px;
    font-family: "Penumbra HalfSerif Std";
    font-weight: 100;
-   color: white;
+   color: var(--white);
 }
 .title-header:before{
    background: linear-gradient(270deg,#85784a 60%,transparent);
@@ -79,7 +116,7 @@ li {
    align-items: center;
    justify-content: center;
    margin: 0 auto;
-   border: 3px solid #85784a;
+   border: 3px solid var(--pastelYellow);
    box-shadow: 0 0 13px 3px rgb(0 0 0 / 75%);
    background: linear-gradient(
       180deg,#131b28 0,
@@ -88,7 +125,7 @@ li {
    );
    font-family: "Penumbra HalfSerif Std", sans-serif;
    letter-spacing: 4px;
-   color: #ada176;
+   color: var(--greyYellow);
    cursor: pointer;
    position: relative;
    overflow: hidden;
@@ -112,14 +149,14 @@ li {
       #182841 50%,#182841 0,
       #0b1b35 0,#0b1b35
    );
-   color: #fff;
+   color: var(--white);
  }
 
  ::-webkit-scrollbar {
-   background-color: #191919;
+   background-color: var(--bgScrollbar);
    height: .5rem;
    width: .5rem;
 }
 ::-webkit-scrollbar-thumb {
-   background-color: #85784a;
+   background-color: var(--pastelYellow);
 }

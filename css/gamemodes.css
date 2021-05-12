@@ -4,7 +4,7 @@
    background-position: center;
    background-size: cover;
    padding: 2rem 0 4rem;
-   border-top: 1px solid #85784a;
+   border-top: 1px solid var(--pastelYellow);
 }
 .info-mode-container {
    margin-top: 30rem;
@@ -13,12 +13,12 @@
 .info-mode-container > .title-desc > h3 {
    font-family: "Penumbra Flare Std";
    font-weight: 100;
-   color: #d1c084;
+   color: var(--yellow);
    font-size: 5.3rem;
    letter-spacing: 5px;
 }
 .info-mode-container > .title-desc > p {
-   color: #fff;
+   color: var(--white);
    font-weight: 100;
    line-height: 3rem;
    max-width: 80rem;
@@ -37,16 +37,16 @@
    font-family: 'Roboto', sans-serif;
    font-size: 1.4rem;
    font-weight: 500;
-   color: #d1c084;
+   color: var(--yellow);
    text-transform: uppercase;
    padding-top: 1rem;
 }
 .info-mode span{
-   color: #fff;
+   color: var(--white);
    font-weight: 100;
 }
 .info-mode b{
-   color: #fff;
+   color: var(--white);
 }
 
 
@@ -62,7 +62,7 @@
    padding: .8rem;
 }
 .map-content > img{
-   border: 1px solid #85784a;
+   border: 1px solid var(--pastelYellow);
 }
 
 
@@ -83,7 +83,7 @@
    font-family: "Penumbra HalfSerif Std";
    font-size: 2.2rem;
    letter-spacing: .4rem;
-   color: white;
+   color: var(--white);
    text-align: center;
    position: absolute;
    left: 50%;
@@ -104,7 +104,7 @@
 }
 .next,
 .prev{
-   color: rgba(255, 255, 255, 0.527);
+   color: var(--greyRgba);
    font-size: 4rem;
    display: flex;
    align-items: center;

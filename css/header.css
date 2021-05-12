@@ -1,5 +1,5 @@
 header{
-   color: var(--primaryColorTxt);
+   color: var(--white);
    background-color: var(--bgHeader);
    display: flex;
    width: 100%;
@@ -15,7 +15,7 @@ header{
    display: none;
 }
 .nav-mobile > ul > div{
-   background-color: #1e3372
+   background-color: var(--bgIconsHeader)
 }
 .burguer-container{
    text-align: center;
@@ -34,7 +34,7 @@ header{
 .burguer-center{
    width: 1.1em;
    height: .2em;
-   background-color: #fff;
+   background-color: var(--white);
    margin: .25rem 0;
    transition: .15s linear;
 }
@@ -77,7 +77,7 @@ header nav.menu-desktop ul li {
    transition: .1s;
 }
 header nav ul li:hover{
-   color: #9f9160
+   color: var(--strawYellow);
 }
 header nav.menu-desktop ul li:after{
    content: "";
@@ -92,14 +92,14 @@ header nav.menu-desktop ul li:after{
 header nav.menu-desktop ul li:hover:after{
    width: 100%;
    left: 0;
-   background-color: #9f9160;
+   background-color: var(--strawYellow);;
 }
 .more{
    display: flex;
    align-items: center;
 }
 .more span{
-   color: #9f9160;
+   color: var(--strawYellow);
    margin-left: -6.5rem;
    transform: rotate(180deg);
    transition: ease-in .1s;
@@ -127,7 +127,7 @@ header nav.menu-desktop ul li:hover:after{
    position: absolute;
 }
 .drop-links:hover:after{
-   background-color: #9f9160;
+   background-color: var(--strawYellow);
 }
 .drop-links{
    padding: 1rem 1rem;
@@ -136,11 +136,11 @@ header nav.menu-desktop ul li:hover:after{
    position: relative;
 }
 .drop-links:hover{
-   color: #9f9160;
-   background-color: #1e2935;
+   color: var(--strawYellow);
+   background-color: var(--bgMenuHover);
 }
 header nav.menu-desktop ol{
-   background-color: var(--iconsHeaderColorBg);
+   background-color: var(--bgIconsHeader);
 }
 header nav.menu-desktop ol > li,
 .profile-mobile {
@@ -154,19 +154,19 @@ header nav.menu-desktop ol > li,
    height: 50px;
    line-height: 2.3;
    margin: 0 1px;
-   background-color: hsla(0,0%,100%,.05);
+   background-color: var(--iconsMenu);
    transition: .1s;
 }
 header nav.menu-desktop ol > li:hover,
 .profile-mobile:hover {
-   background-color: #354880;
+   background-color: var(--iconsMenuHover);
 }
 header nav.menu-desktop ol > li.play-free{
-   background-color: #9f9160;
+   background-color: var(--strawYellow);
    /* padding: 13px 38px; */
    width: 128.27px;
    position: relative;
-   color: #fff;
+   color: var(--white);
    overflow: hidden;
    letter-spacing: 1px;
 }
@@ -207,13 +207,13 @@ header nav.menu-desktop ol li > img,
    height: auto;
    text-align: center;
    text-decoration: none;
-   color: var(--primaryColorTxt);
+   color: var(--white);
    letter-spacing: 5px;
    text-transform: uppercase;
-   background-color: #1a273b;
+   background-color: var(--bgPlayFreeNow);
    padding: 15px;
    width: 270px;
-   border: 2px solid #e9d691;
+   border: 2px solid var(--borderPlayFreeNow);
    font-family: 'Penumbra Flare Std';
    font-size: 1.75rem;
    position: absolute;

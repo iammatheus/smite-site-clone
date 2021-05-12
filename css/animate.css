@@ -8,7 +8,7 @@ header nav ol > li.play-free:before,
    left: -6rem;
    width: 5rem;
    height: 9rem;
-   background-color: #fff;
+   background-color: var(--white);
    transform: rotate(15deg);
    transition: .3s;
    opacity: .4;
@@ -22,19 +22,19 @@ header nav ol > li.play-free:hover:before,
 
 /* Button Play Free animation */
 .play-free-now > a:hover{
-   box-shadow: 0 0 50px 25px#fff;
+   box-shadow: 0 0 50px 25px var(--white);
    animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
    0%{
-      box-shadow: 0 0 40px 10px#fff;
+      box-shadow: 0 0 40px 10px var(--white);
    }
    50%{
-      box-shadow: 0 0 15px 8px#fff;
+      box-shadow: 0 0 15px 8px var(--white);
    }
    100%{
-      box-shadow: 0 0 40px 10px#fff;
+      box-shadow: 0 0 40px 10px var(--white);
    }
 }
 
@@ -50,8 +50,8 @@ header nav ol > li.play-free:hover:before,
    font-size: 3rem;
    text-transform: uppercase;
    letter-spacing: 1rem;
-   color: #fff;
-   background-color: rgba(0,0,0,.5);
+   color: var(--white);
+   background-color: var(--blackRgba5);
    
    width: 96%;
    height: 88%;
